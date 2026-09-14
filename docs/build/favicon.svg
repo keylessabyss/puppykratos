@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>PuppyKratos</title>
+  <rect width="64" height="64" rx="16" fill="#16211f"/>
+  <path d="M18 17h10l-4 11h11L22 49l4-13H15z" fill="#f3b85b"/>
+  <path d="M42 17h5v30h-5z" fill="#e8eee9" opacity=".9"/>
+</svg>

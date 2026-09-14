@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PuppyKratos motorcycle technical-information finder prototype by Keyless Abyss."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>PuppyKratos — Motorcycle Technical Intelligence Prototype</title>
+    <script type="module" crossorigin src="./assets/index-BH8KL4qX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CPuvoE5C.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="PuppyKratos home">
+          <span class="brand-mark" aria-hidden="true">PK</span>
+          <span>
+            <strong>PuppyKratos</strong>
+            <small>by Keyless Abyss</small>
+          </span>
+        </a>
+        <span class="prototype-chip">Development prototype</span>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <p class="eyebrow">Motorcycle technical intelligence</p>
+          <h1 id="page-title">Find the right technical information faster.</h1>
+          <p class="hero-copy">
+            Give PuppyKratos the motorcycle context and the information you need.
+            This first prototype uses local development fixtures while the
+            source-backed search foundation is being designed.
+          </p>
+        </section>
+
+        <section class="workspace-grid" aria-label="Technical information search">
+          <aside class="panel search-panel">
+            <div class="panel-heading">
+              <p class="eyebrow">Step 01</p>
+              <h2>Identify the motorcycle</h2>
+            </div>
+
+            <form id="search-form">
+              <div class="field-grid">
+                <label class="field">
+                  <span>Year</span>
+                  <input id="vehicle-year" name="year" type="number" min="1885" max="2100" value="2022" required />
+                </label>
+                <label class="field">
+                  <span>Manufacturer</span>
+                  <input id="vehicle-manufacturer" name="manufacturer" type="text" value="Indian" required />
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Model</span>
+                <input id="vehicle-model" name="model" type="text" value="Chieftain" required />
+              </label>
+
+              <label class="field">
+                <span>Engine / powertrain <em>optional</em></span>
+                <input id="vehicle-engine" name="engine" type="text" value="Thunderstroke 116" placeholder="e.g. Thunderstroke 116" />
+              </label>
+
+              <div class="panel-heading request-heading">
+                <p class="eyebrow">Step 02</p>
+                <h2>Ask for technical information</h2>
+              </div>
+
+              <label class="field">
+                <span>Your request</span>
+                <textarea id="technical-request" name="request" rows="4" placeholder="e.g. starter relay wiring diagram" required></textarea>
+              </label>
+
+              <button class="primary-button" type="submit">
+                <span>Find technical information</span>
+                <span aria-hidden="true">→</span>
+              </button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="fixture-picker">
+              <div>
+                <p class="eyebrow">Quick start</p>
+                <h3>Try a development fixture</h3>
+              </div>
+              <div id="fixture-buttons" class="fixture-buttons"></div>
+            </div>
+          </aside>
+
+          <section class="panel results-panel" aria-labelledby="results-title">
+            <div class="results-heading">
+              <div>
+                <p class="eyebrow">Technical information results</p>
+                <h2 id="results-title">Ready when you are</h2>
+              </div>
+              <span id="result-count" class="result-count">No search yet</span>
+            </div>
+
+            <div id="results-list" class="results-list">
+              <div class="empty-state">
+                <span class="empty-icon" aria-hidden="true">⌕</span>
+                <h3>Describe what you need to find.</h3>
+                <p>
+                  Select a development fixture or enter a request above. Results
+                  in v0.1 are local fixture data and are not verified repair information.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>PuppyKratos is a development codename.</span>
+        <span>v0.1 · Local fixtures only · No live search</span>
+      </footer>
+    </div>
+  </body>
+</html>
