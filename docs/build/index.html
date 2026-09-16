@@ -9,8 +9,8 @@
     />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>PuppyKratos — Motorcycle Technical Intelligence Prototype</title>
-    <script type="module" crossorigin src="./assets/index-BZNIbSEU.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CD2f5Ysm.css">
+    <script type="module" crossorigin src="./assets/index-DNROVyvt.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bhcaz1Pp.css">
   </head>
   <body>
     <div class="app-shell">
@@ -74,6 +74,17 @@
                 <span>Your request</span>
                 <textarea id="technical-request" name="request" rows="4" placeholder="e.g. starter relay wiring diagram" required></textarea>
               </label>
+
+              <label class="field">
+                <span>Search provider</span>
+                <select id="search-mode" name="search-mode" aria-describedby="search-mode-help">
+                  <option value="tavily" selected>Tavily · broad web retrieval</option>
+                  <option value="exa">Exa Advanced · technical retrieval</option>
+                </select>
+              </label>
+              <p id="search-mode-help" class="field-help">
+                Exa Advanced applies PuppyKratos's server-side technical source policy.
+              </p>
 
               <button class="primary-button" type="submit">
                 <span>Find technical information</span>
